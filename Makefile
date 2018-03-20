@@ -4,7 +4,7 @@ CONTENTS = tklbam
 
 $(TARGET): clean
 	cat debian/changelog
-	env
+	ls -la debian/changelog
 	echo $(SOURCE_DATE_EPOCH)
 
 	find $(CONTENTS) -print0 | \
